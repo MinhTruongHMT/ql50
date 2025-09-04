@@ -1,11 +1,16 @@
 package com.truong.QL50.model;
 
+
+
 public class User {
+
     private Long id;
 
     private String username;
+
     private String email;
-    private String password; // lưu hashed password sau này
+
+    private String password;
 
     public User() {}
 

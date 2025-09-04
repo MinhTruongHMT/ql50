@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Function;
 
 @Repository
 public class InMemoryUserRepository implements UserRepository{
@@ -26,10 +27,10 @@ public class InMemoryUserRepository implements UserRepository{
         users.addAll(List.of(u1,u2,u3,u4,u5,u6,u7,u8,u9,u10));
     }
 
+
     @Override
     public List<User> findAll() {
-        return this.users;
-//        return List.of();
+        return List.of();
     }
 
     @Override
